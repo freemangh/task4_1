@@ -28,11 +28,7 @@ fi
 set -o allexport
 source /etc/lsb-release
 set +o allexport
-echo "CURPATH: $CURPATH
-SCRPATH: $SCRPATH
-OUTFILE: $OUTFILE
-TMPFILE: $TMPFILE
---- Hardware ---
+echo "--- Hardware ---
 CPU:$CPUName ($phyCPUCount CPU with $coresPerCPU cores per CPU)
 RAM: `/bin/cat /proc/meminfo | /usr/bin/awk '/^MemTotal/{print $2" "$3}'`
 Motherboard: $MBManufacturer $MBProductName
